@@ -1,0 +1,31 @@
+.App{
+  width: 100%;
+}
+
+.App__box{
+  display: block;
+  // width: 100%;
+
+}
+.EditTokyo{   
+  width: 90%;
+  margin:0 5%;
+  background-color: white;
+  .Edit__box{
+    width: 90%;
+    margin: auto;
+    display: flex;
+  }
+}
+.title{
+  display: flex;
+    margin: 2% 5% 0 5%;
+    width: 90%;
+    background-color: white;
+}
+.EditPopular{
+  display: block;
+  width: 90%;
+  margin:0 5%;
+  background-color: white;
+}

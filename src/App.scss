@@ -1,31 +1,349 @@
-.App{
-  width: 100%;
+.App {
+    width: 100%;
 }
 
-.App__box{
-  display: block;
-  // width: 100%;
+.App__box {
+    display: block;
+    width: 100%;
+    height: 1500px;
 
 }
-.EditTokyo{   
-  width: 90%;
-  margin:0 5%;
-  background-color: white;
-  .Edit__box{
-    width: 90%;
-    margin: auto;
+
+.App__boxbody {
     display: flex;
-  }
 }
-.title{
-  display: flex;
-    margin: 2% 5% 0 5%;
-    width: 90%;
-    background-color: white;
+
+.App__navbar {
+    width: 100%;
+    height: 3.5%;
 }
-.EditPopular{
-  display: block;
-  width: 90%;
-  margin:0 5%;
-  background-color: white;
+
+.CEO {
+    display: block;
+    width: 49%;
+    margin: 0 27% 0 27%;
+    height: fit-content;
+
+    &__news {
+        display: flex;
+        margin: 2% 0 2% 0;
+        width: 100%;
+        height: 200px;
+
+    }
+
+    &__post {
+        display: block;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+
+    &__box {
+        display: flex;
+        width: 100%;
+        height: 50px;
+
+        img {
+            width: 7%;
+            height: 100%;
+            border-radius: 27px;
+        }
+
+        input {
+            width: 90%;
+            height: 80%;
+            border-radius: 27px;
+            margin: auto;
+        }
+    }
+
+    &__meme {
+        width: 100%;
+        height: 30%;
+
+        ul {
+            display: flex;
+            width: 100%;
+            margin: auto;
+            height: 20%;
+
+            li {
+                list-style-type: none;
+                width: 30%;
+
+                a {
+                    color: black;
+                    text-decoration: none;
+                    font-size: 16px;
+                    border-radius: 25px;
+                    margin-top: 3px;
+                    display: flex;
+                    width: 100%;
+
+                }
+            }
+        }
+
+        ul li a:hover,
+        ul li a.active {
+            background: gainsboro;
+        }
+
+        ul li svg {
+            font-size: 30px;
+            width: 30%;
+        }
+
+
+    }
+
+    &__meeting {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        border: 1px solid black;
+        height: 1%;
+        margin-top: 3%;
+
+        &--create {
+            display: flex;
+            width: 40%;
+            height: 96%;
+            border: 1px solid black;
+            border-radius: 30px;
+
+            svg {
+                font-size: 46px;
+            }
+
+            h4 {
+                margin: auto;
+            }
+        }
+
+        &--user {
+            display: flex;
+            width: 60%;
+            height: 100%;
+            margin: 9px;
+
+            img {
+                width: 10%;
+                height: 79%;
+                border-radius: 27px;
+            }
+
+        }
+    }
+
+    &__mainnew {
+        display: block;
+        margin-top: 3%;
+        border: 1px solid black;
+        height: 55%;
+        border-radius: 15px;
+
+    }
+}
+
+
+.Box {
+    &__new {
+        &--first {
+            width: 17%;
+            height: 100%;
+            border-radius: 15px;
+            border: 1px solid black;
+            margin: auto;
+
+            img {
+                width: 100%;
+                height: 70%;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+            }
+
+            svg {
+                position: absolute;
+                top: 27%;
+                font-size: 40px;
+                left: 30.5%;
+                border-radius: 15px;
+                color: cornflowerblue;
+                cursor: pointer;
+
+            }
+
+            h3 {
+                margin-left: 23%;
+                color: white;
+            }
+        }
+
+        &--two {
+            width: 17%;
+            height: 100%;
+            border-radius: 15px;
+            border: 1px solid black;
+            margin: auto;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+            }
+
+            h3 {
+                margin-left: 23%;
+                position: absolute;
+                margin-left: 2%;
+                margin-top: -3%;
+                color: white;
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width:1000px) {
+    .navbar__box3--user {
+        display: none !important;
+    }
+
+    .search input {
+        width: 0px !important;
+    }
+
+    .navbar__box1 {
+        width: 15% !important;
+    }
+
+    .Supper {
+        display: none;
+    }
+
+    .Chat {
+        display: none;
+    }
+
+    .CEO {
+        width: 88% !important;
+        margin: 0px 10% 0 10% !important;
+    }
+
+    .navbar__box2 ul {
+        padding: 0;
+
+        li {
+            width: 20.5% !important;
+
+            a {
+                padding: 13px 23px !important;
+            }
+        }
+    }
+
+    .navbar__box1 svg {
+
+        width: 38% !important;
+
+    }
+
+    .Box__new--two h3 {
+
+        margin-left: 4% !important;
+        margin-top: -5% !important;
+
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .Supper {
+        display: none;
+    }
+
+    .Chat {
+        display: none;
+    }
+
+    .CEO {
+        width: 100% !important;
+        margin: 0 1% 0 1% !important;
+    }
+
+    .CEO__news {
+        height: 128px !important;
+    }
+
+    .Box__new--first svg {
+        top: 30% !important;
+        left: 4.5% !important;
+
+    }
+
+    .CEO__box img {
+        width: 17% !important;
+    }
+
+    .Box__new--first h3 {
+       display: none;
+    }
+
+    .Box__new--two h3 {
+        margin-top: -9% !important;
+        color: white !important;
+        font-size: 14px !important;
+    }
+
+    .navbar__box2 ul li a {
+        padding: 13px 22px !important;
+
+    }
+
+    .App__navbar {
+
+        height: 8% !important;
+    }
+
+    .navbar {
+        display: inline-block !important;
+
+    }
+
+    .CEO__post {
+        position: absolute !important;
+        top: 72px !important;
+        width: 97% !important;
+        height: 7% !important;
+        border: none!important;
+    }
+
+    .navbar__box1 {
+      background-color: cornflowerblue!important;
+        width: 100%!important;
+   
+    }
+    .navbar__box2 {
+        display: none!important;
+    }
+    .navbar__box3 {
+       width: 100%!important;
+       border-bottom: 1px solid !important;
+        background-color: white;
+    }
+    .navbar__box3--user {
+        display: none!important;
+    }
+    .CEO__meme {
+        display: none!important;
+    }
+    hr{
+        display: none!important;
+    }
+    .CEO__meeting {
+        display: none!important;
+    }
 }

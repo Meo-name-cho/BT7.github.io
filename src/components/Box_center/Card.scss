@@ -1,0 +1,257 @@
+.CEO {
+    display: block;
+    width: 49%;
+    margin: 0 27% 0 27%;
+
+    &__news {
+        display: flex;
+        margin: 2% 0 2% 0;
+        width: 100%;
+        height: 200px;
+
+    }
+
+    &__post {
+        display: block;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+
+    &__box {
+        display: flex;
+        width: 100%;
+        height: 50px;
+
+        img {
+            width: 7%;
+            height: 100%;
+            border-radius: 27px;
+        }
+
+        input {
+            width: 90%;
+            height: 80%;
+            border-radius: 27px;
+            margin: auto;
+        }
+    }
+
+    &__meme {
+        width: 100%;
+        height: 30%;
+
+        ul {
+            display: flex;
+            width: 100%;
+            margin: auto;
+            height: 20%;
+
+            li {
+                list-style-type: none;
+                width: 30%;
+
+                a {
+                    color: black;
+                    text-decoration: none;
+                    font-size: 16px;
+                    border-radius: 25px;
+                    margin-top: 3px;
+                    display: flex;
+                    width: 100%;
+
+                }
+            }
+        }
+
+        ul li a:hover,
+        ul li a.active {
+            background: gainsboro;
+        }
+
+        ul li svg {
+            font-size: 30px;
+            width: 30%;
+        }
+
+
+    }
+
+
+
+    &__mainnew {
+        display: block;
+        margin-top: 3%;
+        border: 1px solid black;
+        height: 55%;
+        border-radius: 15px;
+
+    }
+}
+
+
+.Box {
+    &__new {
+        &--first {
+            width: 17%;
+            height: 100%;
+            border-radius: 15px;
+            border: 1px solid black;
+            margin: auto;
+
+            img {
+                width: 100%;
+                height: 70%;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+            }
+
+            svg {
+                position: absolute;
+                top: 27%;
+                font-size: 40px;
+                left: 30.5%;
+                border-radius: 15px;
+                color: cornflowerblue;
+                cursor: pointer;
+
+            }
+
+            h3 {
+                margin-left: 23%;
+                color: white;
+            }
+        }
+
+        &--two {
+            width: 17%;
+            height: 100%;
+            border-radius: 15px;
+            border: 1px solid black;
+            margin: auto;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+            }
+
+            h3 {
+                margin-left: 23%;
+                position: absolute;
+                margin-left: 2%;
+                margin-top: -3%;
+                color: white;
+            }
+        }
+    }
+
+
+}
+.title {
+    &__box1 {
+        display: flex;
+        width: 100%;
+        height: 9%;
+
+        &__para {
+            display: flex;
+
+            p {
+                margin: 0;
+            }
+
+            svg {
+                margin: 3px;
+                font-size: 15px;
+            }
+        }
+
+        &--image {
+            width: 10%;
+            margin: 8px 0 8px 10px;
+
+            img {
+                width: 75%;
+                height: 90%;
+                border-radius: 27px;
+            }
+        }
+
+        &--content {
+            width: 85%;
+            float: left;
+
+            h3 {
+                margin: 2px;
+            }
+        }
+
+        &--icon {
+            width: 5%;
+        }
+    }
+
+    &__box2 {
+        display: block;
+        height: 80%;
+        width: 100%;
+
+        h4 {
+            margin-top: 0;
+        }
+
+        img {
+            width: 100%;
+            height: 93%;
+        }
+    }
+
+    &__box3 {
+        display: block;
+        height: 10%;
+        width: 100%;
+
+        &--meme {
+            display: flex;
+            width: 100%;
+            height: 50%;
+        }
+
+        &--share {
+            display: flex;
+            width: 100%;
+            height: 55%;
+        }
+    }
+
+    &__icons {
+        width: 50%;
+        margin-left: 3%;
+
+        svg {
+            font-size: 25px;
+            color: black;
+            background-color: yellow;
+            border-radius: 15px;
+        }
+
+    }
+
+    &__count {
+        width: 50%;
+        text-align: right;
+    }
+    &__like, &__Com,&__Sharee{
+        width: 33.33%;
+        margin-right: 3px;
+        button{
+            height: 100%;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            
+        }
+    }
+
+}
